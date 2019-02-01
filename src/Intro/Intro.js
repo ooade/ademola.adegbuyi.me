@@ -21,7 +21,8 @@ export default () => (
 				A 22 years old developer based in Lagos, Nigeria. Loves working with
 				bleeding edge technologies, playing around with these new technologies,
 				and making sure developers understand and use them efficiently and
-				effectively.
+				effectively. I'm also a React.js Learning Community lead for Facebook
+				Developer Circle.
 			</p>
 			<div className="intro__pluralsight">
 				<p className="pluralsight__IQ">
