@@ -3,8 +3,8 @@
 	"short_name": "ooade",
 	"start_url": "/",
 	"display": "standalone",
-	"theme_color": "#3b5cc9",
-	"background_color": "#000000",
+	"theme_color": "#1b1b1b",
+	"background_color": "#1b1b1b",
 	"icons": [
 		{
 			"src": "/icons/icon-192x192.png",
