@@ -3,8 +3,10 @@ import Modal from './Modal';
 import Intro from '../Intro/Intro';
 import Work from '../Work/Work';
 import OpenSource from '../OpenSource/OpenSource';
+import Talks from '../Talks/Talks';
+import Footer from '../Footer/Footer';
 
-import logoIcon from './logo.svg';
+import logoIcon from './logo.png';
 import menuIcon from './menu-icon.svg';
 
 import './App.scss';
@@ -54,26 +56,30 @@ class App extends Component {
 		const { showModal, page } = this.state;
 
 		return (
-			<div className="app">
-				<div className={`navbar ${page !== 'intro' && 'navbar--fixed'}`}>
-					<div>
-						<img src={logoIcon} alt="logo" className="navbar--logo" />
+			<React.Fragment>
+				<div className="app">
+					<div className={`navbar ${page !== 'intro' && 'navbar--fixed'}`}>
+						<div>
+							<img src={logoIcon} alt="logo" className="navbar--logo" />
+						</div>
+						<div>
+							<img
+								className="navbar__menu-icon"
+								src={menuIcon}
+								alt="menu icon"
+								onClick={() => this.handleModal(true)}
+							/>
+						</div>
 					</div>
-					<div>
-						<img
-							className="navbar__menu-icon"
-							src={menuIcon}
-							alt="menu icon"
-							onClick={() => this.handleModal(true)}
-						/>
-					</div>
-				</div>
 
-				{showModal && <Modal handleModal={this.handleModal} />}
-				<Intro />
-				<Work />
-				<OpenSource />
-			</div>
+					{showModal && <Modal handleModal={this.handleModal} />}
+					<Intro />
+					<Work />
+					<OpenSource />
+					<Talks />
+				</div>
+				<Footer />
+			</React.Fragment>
 		);
 	}
 }

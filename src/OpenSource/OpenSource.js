@@ -25,7 +25,7 @@ export default class OpenSource extends React.Component {
 				description
 			}));
 			this.setState({ data, loading: false });
-		}, 0);
+		}, 1500);
 	}
 
 	render() {
@@ -46,9 +46,11 @@ export default class OpenSource extends React.Component {
 					) : (
 						<div>Loading...</div>
 					)}
-					<div className="open-source--link__box">
-						<a href="https://github.com/ooade?tab=repositories">View All.</a>
-					</div>
+					{!loading && (
+						<div className="open-source--link__box">
+							<a href="https://github.com/ooade?tab=repositories">View All.</a>
+						</div>
+					)}
 				</main>
 			</div>
 		);

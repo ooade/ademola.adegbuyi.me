@@ -1,0 +1,22 @@
+[
+	{
+		"link": "https://docs.google.com/presentation/d/1hfbOx59dDC0M9cYCMxSmpSHyivDEp_OBinOe03IpIuI/edit?usp=sharing",
+		"title": "A Gentle Introduction to GitHub",
+		"host": "Nacoss, Yaba College Of Technology"
+	},
+	{
+		"link": "https://speakerdeck.com/ooade/super-charging-single-page-apps",
+		"title": "Super Charging Single Page Apps",
+		"host": "Google I/O Extended 2017 Lagos"
+	},
+	{
+		"link": "https://docs.google.com/presentation/d/13yTCv22Xv1gp6SkzZMVZSkvHgB8lcvkfTRizq0GdCeA/edit?usp=sharing",
+		"title": "Building Apps With Apollo GraphQL",
+		"host": "Facebook Developer Circles"
+	},
+	{
+		"link": "https://medium.com/@ooade/freecodecamp-ikeja-novembers-meetup-63870dd074f7",
+		"title": "Scaling through the hurdles of unemployment as a web developer",
+		"host": "FreeCodeCamp Ikeja"
+	}
+]

@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './Modal.scss';
 import clearIcon from './clear-icon.svg';
+import { SocialLinks } from '../Footer/Footer';
 
 const Modal = ({ handleModal }) => {
 	window.addEventListener('keydown', e => {
@@ -9,6 +11,25 @@ const Modal = ({ handleModal }) => {
 			handleModal(false);
 		}
 	});
+
+	const menuItems = [
+		{
+			permalink: '#intro',
+			title: 'Introduction'
+		},
+		{
+			permalink: '#work',
+			title: 'Selected works'
+		},
+		{
+			permalink: '#open-source',
+			title: 'Open Source Projects'
+		},
+		{
+			permalink: '#talks',
+			title: 'Talks'
+		}
+	];
 
 	return ReactDOM.createPortal(
 		<div className="modal">
@@ -21,16 +42,21 @@ const Modal = ({ handleModal }) => {
 				/>
 			</div>
 			<div className="modal__body">
-				<ul>
-					<li>
-						<a href="#intro">Introduction</a>
-					</li>
-					<li>
-						<a href="#work">Selected Works</a>
-					</li>
-					<li>
-						<a href="#open-source">Open Source Projects</a>
-					</li>
+				<ul className="modal__list">
+					{menuItems.map(({ permalink, title }, key) => (
+						<li key={key}>
+							<a href={permalink}>{title}</a>
+						</li>
+					))}
+				</ul>
+				<ul className="modal__social">
+					{SocialLinks.map(({ href, text }, key) => (
+						<li key={key}>
+							<a href={href} target="_blank" rel="noopener noreferrer">
+								{text}
+							</a>
+						</li>
+					))}
 				</ul>
 			</div>
 		</div>,

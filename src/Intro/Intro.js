@@ -7,7 +7,7 @@ import './Intro.scss';
 import horizontalLineIcon from '../Sidebar/horizontal-line.svg';
 
 export default () => (
-	<div className="intro page">
+	<div className="intro page" id="intro">
 		<Sidebar page="Introduction" />
 		<main>
 			<h1>Ademola Adegbuyi</h1>
@@ -26,8 +26,9 @@ export default () => (
 			<div className="intro__pluralsight">
 				<p className="pluralsight__IQ">
 					<a href="https://app.pluralsight.com/profile/ademola">
-						Expert In JavaScript and React.js on
-					</a>
+						Expert In JavaScript and React.js
+					</a>{' '}
+					on
 				</p>
 				<Image
 					className="pluralsight--logo"

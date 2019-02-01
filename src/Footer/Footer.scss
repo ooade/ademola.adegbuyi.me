@@ -1,0 +1,38 @@
+$blue: #3b5cc9;
+
+footer {
+	margin-top: 3rem;
+	padding: 15rem 1rem;
+	padding-bottom: 5rem;
+	background-color: #111111;
+
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+
+		.social {
+			text-align: center;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			max-width: 400px;
+			margin-top: 1rem;
+
+			a {
+				padding: 0.5rem;
+				font-size: 14px;
+			}
+		}
+
+		a {
+			font-size: 18px;
+			text-decoration: none;
+			&:hover {
+				transition-delay: 0.15s;
+				color: $blue;
+			}
+		}
+	}
+}
