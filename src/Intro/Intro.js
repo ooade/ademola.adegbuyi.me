@@ -40,6 +40,9 @@ export default () => (
 			<div className="intro__cli">
 				CLI: <code>npx ademola</code>
 			</div>
+			<div className="intro__graphql">
+				<a href="https://ademola.adegbuyi.me/graphql">GraphQL PlayGround</a>
+			</div>
 		</main>
 	</div>
 );
