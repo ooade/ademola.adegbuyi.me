@@ -11,6 +11,8 @@ import menuIcon from './menu-icon.svg';
 
 import './App.scss';
 
+require('intersection-observer');
+
 class App extends Component {
 	state = {
 		page: 'intro',
