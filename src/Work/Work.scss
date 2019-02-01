@@ -1,4 +1,5 @@
 .work {
+	margin-top: 5rem;
 }
 
 .work__box {
@@ -11,6 +12,7 @@
 	max-width: 550px;
 	width: 100%;
 	height: 100%;
+	object-fit: contain;
 }
 
 .work__box__description {

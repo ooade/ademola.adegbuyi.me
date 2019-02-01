@@ -45,7 +45,7 @@ export default () => (
 								className="intro--icon"
 							/>
 							<p>{technologies}</p>
-							{website && <a href={website}>Explore</a>}
+							{website && <a href={website}>Explore.</a>}
 						</div>
 					</div>
 				)

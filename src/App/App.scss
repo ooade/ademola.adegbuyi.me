@@ -7,6 +7,10 @@
 	padding: 2rem;
 	box-sizing: border-box;
 	justify-content: space-between;
+
+	.navbar--logo {
+		width: 50px;
+	}
 }
 
 .navbar--fixed {

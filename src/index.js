@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App/App';
 import * as serviceWorker from './serviceWorker';
+require('isomorphic-fetch');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

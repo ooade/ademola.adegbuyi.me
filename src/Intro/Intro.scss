@@ -1,6 +1,6 @@
 .intro {
 	height: 80vh;
-	margin-top: 8rem;
+	margin-top: 5rem;
 
 	main {
 		h1 {
@@ -10,6 +10,16 @@
 			text-transform: uppercase;
 			font-family: 'Major Mono Display', cursive;
 		}
+	}
+}
+
+.intro__pluralsight {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	.pluralsight--logo {
+		width: 150px;
+		height: auto;
 	}
 }
 

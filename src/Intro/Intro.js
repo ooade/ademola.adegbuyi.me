@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'pimg';
 import Sidebar from '../Sidebar/Sidebar';
 
 import './Intro.scss';
@@ -22,6 +23,19 @@ export default () => (
 				and making sure developers understand and use them efficiently and
 				effectively.
 			</p>
+			<div className="intro__pluralsight">
+				<p className="pluralsight__IQ">
+					<a href="https://app.pluralsight.com/profile/ademola">
+						Expert In JavaScript and React.js on
+					</a>
+				</p>
+				<Image
+					className="pluralsight--logo"
+					src="https://res.cloudinary.com/stackpie/image/upload/v1549002879/portfolio/ps_logo_f-03.png"
+					placeholder="https://res.cloudinary.com/stackpie/image/upload/c_thumb,w_10/v1549002879/portfolio/ps_logo_f-03.png"
+					alt="pluralsight logo"
+				/>
+			</div>
 		</main>
 	</div>
 );

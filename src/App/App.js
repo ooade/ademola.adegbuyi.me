@@ -57,7 +57,7 @@ class App extends Component {
 			<div className="app">
 				<div className={`navbar ${page !== 'intro' && 'navbar--fixed'}`}>
 					<div>
-						<img src={logoIcon} alt="logo" />
+						<img src={logoIcon} alt="logo" className="navbar--logo" />
 					</div>
 					<div>
 						<img

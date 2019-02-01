@@ -29,7 +29,7 @@ const Modal = ({ handleModal }) => {
 						<a href="#work">Selected Works</a>
 					</li>
 					<li>
-						<a href="#work">Open Source Projects</a>
+						<a href="#open-source">Open Source Projects</a>
 					</li>
 				</ul>
 			</div>
