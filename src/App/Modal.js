@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './Modal.scss';
 import clearIcon from './clear-icon.svg';
-import { SocialLinks } from '../Footer/Footer';
+import SocialLinks from '../Footer/Social.json';
 
 const Modal = ({ handleModal }) => {
 	window.addEventListener('keydown', e => {
