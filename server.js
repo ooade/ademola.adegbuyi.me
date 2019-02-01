@@ -50,10 +50,6 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app });
 
-app.get('/mango', (_, res) => {
-	res.json('mongo');
-});
-
 app.use('/', express.static(path.join(__dirname, 'build')));
 
 app.use('*', (_, res) => {

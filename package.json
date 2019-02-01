@@ -19,7 +19,8 @@
 	},
 	"scripts": {
 		"dev": "concurrently 'npm run only:server' 'npm run only:client'",
-		"start": "node server",
+		"start": "pm2-runtime start pm2.config.js --env production",
+		"prepublish": "npm run build",
 		"only:client": "react-scripts start",
 		"only:server": "nodemon server",
 		"build": "react-scripts build",
