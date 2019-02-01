@@ -37,6 +37,9 @@ export default () => (
 					alt="pluralsight logo"
 				/>
 			</div>
+			<div className="intro__cli">
+				CLI: <code>npx ademola</code>
+			</div>
 		</main>
 	</div>
 );
