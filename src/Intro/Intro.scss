@@ -1,0 +1,22 @@
+.intro {
+	height: 80vh;
+	margin-top: 8rem;
+
+	main {
+		h1 {
+			font-family: 'Major Mono Display', cursive;
+		}
+		h3 {
+			text-transform: uppercase;
+			font-family: 'Major Mono Display', cursive;
+		}
+	}
+}
+
+.intro--icon {
+	width: 30px;
+}
+
+.intro__about {
+	max-width: 700px;
+}

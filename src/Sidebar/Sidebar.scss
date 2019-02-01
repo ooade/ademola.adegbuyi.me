@@ -1,0 +1,21 @@
+.sidebar {
+	display: flex;
+	align-items: center;
+	margin-top: 3rem;
+	transform: rotate(90deg);
+	align-self: flex-start;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 425px) {
+		transform: rotate(0deg);
+	}
+}
+
+.page--icon {
+	width: 20px;
+}
+
+.page--text {
+	display: inline-block;
+}

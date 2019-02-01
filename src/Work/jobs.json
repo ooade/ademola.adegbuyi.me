@@ -1,0 +1,21 @@
+[
+	{
+		"aboutCompany": "A russian startup that help students connect to verified native English tutors, to help them learn and understand English.",
+		"companyName": "Conectar LLC",
+		"image": "https://res.cloudinary.com/stackpie/image/upload/v1548971198/portfolio/Conectar.png",
+		"imagePlaceholder": "https://res.cloudinary.com/stackpie/image/upload/c_thumb,w_10/v1548971198/portfolio/Conectar.png",
+		"role": "Front End Developer",
+		"roleDescription": "Role: Front End Architect; Integrated Redux to handle global states, React Router to turn our Ruby App to a Single Page Application (SPA), Route Based Code Splitting with Suspense and Lazy. Built the Product.",
+		"technologies": "Technologies: React.js, Redux, React Router"
+	},
+	{
+		"aboutCompany": "Fashion tech startup in Nigeria that help users get the right product.",
+		"companyName": "Outfit Nigeria",
+		"image": "https://res.cloudinary.com/stackpie/image/upload/v1548971216/portfolio/outfit.png",
+		"imagePlaceholder": "https://res.cloudinary.com/stackpie/image/upload/c_thumb,w_10/v1548971216/portfolio/outfit.png",
+		"role": "Full Stack Developer",
+		"roleDescription": "Role: I built the whole website. Authentication with Google & Facebook, Image Uploading and Image Matching with Cloudinary, Integrated Payment with Paystack, Uploaded to Digital Ocean with nginx and http2 enabled.",
+		"technologies": "Technologies: React.js, Express.js, Node.js Apollo GraphQL, Material UI, Cloudinary",
+		"website": "https://outfit.ng"
+	}
+]
