@@ -44,8 +44,10 @@ $blue: #3b5cc9;
 		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		max-width: 400px;
 		margin-top: 3rem;
+		padding: 0;
 		padding-top: 2rem;
 
 		a {

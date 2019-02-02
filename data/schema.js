@@ -17,6 +17,7 @@ module.exports = gql`
 
 	type Social {
 		github: String
+		medium: String
 		twitter: String
 		linkedin: String
 		freecodecamp: String
