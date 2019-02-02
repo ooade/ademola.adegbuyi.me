@@ -12,6 +12,7 @@ export default () => (
 		<main>
 			<h1>Ademola Adegbuyi</h1>
 			<h3>Full Stack Developer</h3>
+			<h5>(Available for Hire)</h5>
 			<img
 				src={horizontalLineIcon}
 				alt="horizontal line icon"
@@ -28,7 +29,7 @@ export default () => (
 				<p className="pluralsight__IQ">
 					<a href="https://app.pluralsight.com/profile/ademola">
 						Expert In JavaScript and React.js
-					</a>{' '}
+					</a>
 					on
 				</p>
 				<Image
@@ -38,11 +39,8 @@ export default () => (
 					alt="pluralsight logo"
 				/>
 			</div>
-			<div className="intro__cli">
-				CLI: <code>npx ademola</code>
-			</div>
-			<div className="intro__graphql">
-				<a href="https://ademola.adegbuyi.me/graphql">GraphQL PlayGround</a>
+			<div className="intro__cli_graphql">
+				Also available as CLI <code>npx ademola</code> and <a href="https://ademola.adegbuyi.me/graphql">GraphQL PlayGround.</a>
 			</div>
 		</main>
 	</div>
