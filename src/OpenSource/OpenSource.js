@@ -12,6 +12,7 @@ const OpenSource = () => {
 				'https://api.github.com/users/ooade/repos?per_page=100'
 			);
 			let data = await response.json();
+			data = data.filter(v => v.language === 'JavaScript');
 			data.sort((a, b) => b.stargazers_count - a.stargazers_count);
 			data.length = 10;
 			data = data.map(({ id, name, stargazers_count, description }) => ({
