@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import Modal from './Modal';
 import Intro from '../Intro/Intro';
 import Work from '../Work/Work';
@@ -13,17 +13,15 @@ import './App.scss';
 
 require('intersection-observer');
 
-class App extends Component {
-	state = {
-		page: 'intro',
-		showModal: false
+const App = () => {
+	const [page, setPage] = useState('intro');
+	const [modalVisibility, setModalVisibility] = useState(false);
+
+	const handleModal = value => {
+		setModalVisibility(value);
 	};
 
-	handleModal = value => {
-		this.setState({ showModal: value });
-	};
-
-	componentDidMount() {
+	useLayoutEffect(() => {
 		let elements = document.querySelectorAll('.page');
 
 		let options = {
@@ -40,10 +38,10 @@ class App extends Component {
 					if (entry.isIntersecting) {
 						if (classExists('intro')) {
 							// Introduction page
-							this.setState({ page: 'intro' });
+							setPage('intro');
 						} else if (classExists('work')) {
 							// Work page
-							this.setState({ page: 'work' });
+							setPage('work');
 						}
 					}
 				});
@@ -52,38 +50,34 @@ class App extends Component {
 			let observer = new IntersectionObserver(callback, options);
 			observer.observe(element);
 		});
-	}
+	});
 
-	render() {
-		const { showModal, page } = this.state;
-
-		return (
-			<React.Fragment>
-				<div className="app">
-					<div className={`navbar ${page !== 'intro' && 'navbar--fixed'}`}>
-						<div>
-							<img src={logoIcon} alt="logo" className="navbar--logo" />
-						</div>
-						<div>
-							<img
-								className="navbar__menu-icon"
-								src={menuIcon}
-								alt="menu icon"
-								onClick={() => this.handleModal(true)}
-							/>
-						</div>
+	return (
+		<React.Fragment>
+			<div className="app">
+				<div className={`navbar ${page !== 'intro' && 'navbar--fixed'}`}>
+					<div>
+						<img src={logoIcon} alt="logo" className="navbar--logo" />
 					</div>
-
-					{showModal && <Modal handleModal={this.handleModal} />}
-					<Intro />
-					<Work />
-					<OpenSource />
-					<Talks />
+					<div>
+						<img
+							className="navbar__menu-icon"
+							src={menuIcon}
+							alt="menu icon"
+							onClick={() => handleModal(true)}
+						/>
+					</div>
 				</div>
-				<Footer />
-			</React.Fragment>
-		);
-	}
-}
+
+				{modalVisibility && <Modal handleModal={handleModal} />}
+				<Intro />
+				<Work />
+				<OpenSource />
+				<Talks />
+			</div>
+			<Footer />
+		</React.Fragment>
+	);
+};
 
 export default App;
