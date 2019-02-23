@@ -1,3 +1,10 @@
-# My 2019 portfolio
+# Ademola's Portfolio
+Hola :wave:
 
-Here's my portfolio! Hippey!
+**What's up:**
+- Minimalist Design
+- Uses React Hooks
+- Uses GraphQL, but with local data
+
+## License
+MIT
