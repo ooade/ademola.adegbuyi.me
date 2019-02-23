@@ -24,7 +24,7 @@ const OpenSource = () => {
 			setData(data);
 			setLoading(false);
 		})();
-	});
+	}, []);
 
 	return (
 		<div className="open-source page" id="open-source">

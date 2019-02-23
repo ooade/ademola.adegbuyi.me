@@ -50,7 +50,7 @@ const App = () => {
 			let observer = new IntersectionObserver(callback, options);
 			observer.observe(element);
 		});
-	});
+	}, []);
 
 	return (
 		<React.Fragment>
