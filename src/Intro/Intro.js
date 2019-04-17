@@ -12,7 +12,7 @@ export default () => (
 		<main>
 			<h1>Ademola Adegbuyi</h1>
 			<h3>Full Stack Developer</h3>
-			<h5>(Available for Hire)</h5>
+			<h5>Son of House Stark</h5>
 			<img
 				src={horizontalLineIcon}
 				alt="horizontal line icon"
