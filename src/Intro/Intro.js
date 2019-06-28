@@ -19,7 +19,7 @@ export default () => (
 				className="intro--icon"
 			/>
 			<p className="intro__about">
-				A 22 years old developer based in Lagos, Nigeria. Loves working with
+				A 23 years old developer based in Lagos, Nigeria. Loves working with
 				bleeding edge technologies, playing around with these new technologies,
 				and making sure developers understand and use them efficiently and
 				effectively. I'm also a React.js Learning Community lead for Facebook
