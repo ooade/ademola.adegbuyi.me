@@ -1,0 +1,22 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - apollo-server-express > apollo-server-core > lodash:
+        patched: '2019-07-04T05:22:19.507Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2019-07-04T05:22:19.507Z'
+    - pm2 > async > lodash:
+        patched: '2019-07-04T05:22:19.507Z'
+    - apollo-server-express > apollo-server-core > apollo-engine-reporting > lodash:
+        patched: '2019-07-04T05:22:19.507Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2019-07-04T05:22:19.507Z'
+    - pm2 > @pm2/js-api > async > lodash:
+        patched: '2019-07-04T05:22:19.507Z'
+    - pm2 > pm2-deploy > async > lodash:
+        patched: '2019-07-04T05:22:19.507Z'
+    - pm2 > vizion > async > lodash:
+        patched: '2019-07-04T05:22:19.507Z'
