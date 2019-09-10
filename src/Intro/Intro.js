@@ -11,8 +11,7 @@ export default () => (
 		<Sidebar page="Introduction" />
 		<main>
 			<h1>Ademola Adegbuyi</h1>
-			<h3>Full Stack Developer</h3>
-			<h5>Son of House Stark</h5>
+			<h3>Frontend Engineer</h3>
 			<img
 				src={horizontalLineIcon}
 				alt="horizontal line icon"
