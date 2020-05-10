@@ -16,21 +16,21 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "3.0.0",
-    "serve-favicon": "^2.5.0",
-    "snyk": "^1.230.5"
+    "serve-favicon": "^2.5.0"
   },
   "scripts": {
     "dev": "concurrently 'npm run only:server' 'npm run only:client'",
     "start": "pm2-runtime start pm2.config.js --env production",
-    "prepublish": "npm run snyk-protect; npm run build",
     "only:client": "react-scripts start",
     "only:server": "nodemon server",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "snyk-protect": "snyk protect"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   },
   "browserslist": [
     ">0.2%",
