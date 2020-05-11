@@ -15,8 +15,9 @@
     "pm2": "^3.2.9",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "3.0.0",
-    "serve-favicon": "^2.5.0"
+    "react-scripts": "3.3.0",
+    "serve-favicon": "^2.5.0",
+    "snyk": "^1.319.2"
   },
   "scripts": {
     "dev": "concurrently 'npm run only:server' 'npm run only:client'",
@@ -24,7 +25,9 @@
     "only:client": "react-scripts start",
     "only:server": "nodemon server",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
