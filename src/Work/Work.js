@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'pimg';
 
 import Sidebar from '../Sidebar/Sidebar';
 import horizontalLineIcon from '../Sidebar/horizontal-line.svg';
@@ -18,21 +17,16 @@ export default () => (
 						aboutCompany,
 						companyName,
 						image,
-						imagePlaceholder,
 						role,
 						roleDescription,
 						technologies,
-						website
+						website,
 					},
 					key
 				) => (
 					<div className="work__box" key={key}>
 						<div className="work__box__image">
-							<Image
-								className="work--image"
-								src={image}
-								placeholder={imagePlaceholder}
-							/>
+							<img className="work--image" src={image} loading="lazy" alt="" />
 						</div>
 						<div className="work__box__description">
 							<h2>{companyName}</h2>

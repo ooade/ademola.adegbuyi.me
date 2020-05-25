@@ -6,7 +6,7 @@ require('isomorphic-fetch');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-if ('serviceWorker' in navigator) {
+if (process.env.NODE_ENV !== 'development' && 'serviceWorker' in navigator) {
 	window.addEventListener('load', () => {
 		navigator.serviceWorker
 			.register('/personal-service-worker.js')
