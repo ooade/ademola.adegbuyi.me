@@ -1,7 +1,14 @@
-const PRECACHE_CACHE_NAME = 'precache-v0.1';
-const precachedPaths = ['/', '/favicon.ico', '/large-meta-image.png', '/manifest.json'];
+const version = '__VERSION__';
 
-const RUNTIME_CACHE_NAME = 'runtime-v0.1';
+const PRECACHE_CACHE_NAME = `precache-${version}`;
+const precachedPaths = [
+	'/',
+	'/favicon.ico',
+	'/large-meta-image.png',
+	'/manifest.json',
+];
+
+const RUNTIME_CACHE_NAME = `runtime-${version}`;
 const runtimeRegexp = /(.css|.png|.jpg|.svg|.chunk.js)$|^(https:\/\/fonts.googleapis.com|https:\/\/fonts.gstatic.com|https:\/\/api.github.com\/users\/ooade)/;
 
 // Precache
@@ -26,24 +33,26 @@ self.addEventListener('fetch', (event) => {
 				return response;
 			}
 
-			return fetch(event.request).then((response) => {
-				if (!response || response.status !== 200) {
-					// response.type !== 'basic'
+			return fetch(event.request)
+				.then((response) => {
+					if (!response || response.status !== 200) {
+						// response.type !== 'basic'
+						return response;
+					}
+
+					const responseToCache = response.clone();
+
+					if (response.url.match(runtimeRegexp)) {
+						caches.open(RUNTIME_CACHE_NAME).then((cache) => {
+							cache.put(event.request, responseToCache);
+						});
+					}
+
 					return response;
-				}
-
-				const responseToCache = response.clone();
-
-				if (response.url.match(runtimeRegexp)) {
-					caches.open(RUNTIME_CACHE_NAME).then((cache) => {
-						cache.put(event.request, responseToCache);
-					});
-				}
-
-				return response;
-			}).catch((response) => {
-				return response;
-			})
+				})
+				.catch((response) => {
+					return response;
+				});
 		})
 	);
 });
